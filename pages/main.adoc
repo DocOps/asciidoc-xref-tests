@@ -1,0 +1,39 @@
+= Test Page
+:page-permalink: /main
+
+.Xref source
+[source,asciidoc]
+----
+<<second-topic#topic-2-secthead-anchor,link to another topic>>
+----
+.Resolves as
+====
+<<second-topic#topic-2-secthead-anchor,link to another topic>>
+====
+
+.Xref source
+[source,asciidoc]
+----
+<<second-topic#topic-2-secthead-anchor>>
+----
+
+.Resolves as
+====
+<<second-topic#topic-2-secthead-anchor>>
+====
+
+.Xref to target not in book
+[source,asciidoc]
+----
+<<third-topic#topic-3-secthead-anchor>>
+----
+
+Resolves as
+====
+<<third-topic#topic-3-secthead-anchor>>
+====
+
+.Including a snippet in the Main page
+====
+include::../snippets/snip.adoc[]
+====

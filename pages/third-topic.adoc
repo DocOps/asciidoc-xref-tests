@@ -1,0 +1,7 @@
+= Topic Three
+:page-permalink: /third-topic
+
+This topic will not appear in the book, only on the web.
+
+[[topic-3-secthead-anchor]]
+== Third Topic Subsect

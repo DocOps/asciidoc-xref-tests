@@ -1,0 +1,19 @@
+{% assign all-form-attributes = site.data.attributes.fields %}
+{% for attribute in all-form-attributes %}
+  {% unless attribute.exclude contains page.api-type %}
+  {% assign last_item = attribute.name %}
+  {% endunless %}
+{% endfor %}
+
+{% highlight json %}
+{
+  "type":"platform.{{ page.api-type }}",
+  "properties":{
+   {% for attribute in all-form-attributes -%}
+   {%- unless attribute.exclude contains page.api-type %}
+   "{{ attribute.name }}":"{{ attribute.value | flatify }}"{% unless attribute.name == last_item %},{% endunless %}
+   {%- endunless -%}
+   {%- endfor -%}
+}
+}
+{% endhighlight %}
