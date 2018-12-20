@@ -1,4 +1,6 @@
-# Experimental repo based loosely on the Jekyll-now bootstrap theme by Barry Clark: http://jekyllthemes.org/themes/jekyll-now/
+# AsciiDoc Xref Testing
+
+Experimental repo based loosely on the Jekyll-now bootstrap theme by Barry Clark: http://jekyllthemes.org/themes/jekyll-now/
 
 ## Build
 
@@ -18,6 +20,7 @@ asciidoctor -d book -o _output/book-edition.html pages/book-index.adoc
 asciidoctor-pdf -d book -o _output/book-edition.pdf pages/book-index.adoc
 ```
 
+### Build and Serve Jekyll Site
 ```shell
 jekyll s
 ```
