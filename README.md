@@ -13,12 +13,12 @@ To test this repo:
 #### From project root
 
 ```shell
-asciidoctor -d book -o _output/book-edition.html book-index-root.adoc
+asciidoctor -d book -o _output/book-edition.html -a bookformat=true book-index-root.adoc
 ```
 #### From pages/ dir
 
 ```shell
-asciidoctor -d book -o _output/book-edition.html pages/book-index-flush.adoc
+asciidoctor -d book -o _output/book-edition.html -a bookformat=true pages/book-index-flush.adoc
 ```
 
 ### Build PDF Book
@@ -26,13 +26,13 @@ asciidoctor -d book -o _output/book-edition.html pages/book-index-flush.adoc
 #### From project root
 
 ```shell
-asciidoctor-pdf -d book -o _output/book-edition.pdf book-index-root.adoc
+asciidoctor-pdf -d book -o _output/book-edition.pdf -a bookformat=true book-index-root.adoc
 ```
 
 #### From pages/ dir
 
 ```shell
-asciidoctor-pdf -d book -o _output/book-edition.pdf pages/book-index-flush.adoc
+asciidoctor-pdf -d book -o _output/book-edition.pdf -a bookformat=true pages/book-index-flush.adoc
 ```
 
 ### Build and Serve Jekyll Site
