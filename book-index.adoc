@@ -1,0 +1,12 @@
+= Book-formatted Edition
+
+:leveloffset: +1
+
+include::pages/main.adoc[]
+
+include::pages/second-topic.adoc[]
+
+.Including a snippet in the index
+====
+include::snippets/snip.adoc[]
+====
