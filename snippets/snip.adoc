@@ -1,1 +1,6 @@
 Some snippet content.
+
+[[snippet-anchor]]
+== Let's add an anchor
+
+End of snippet!!!

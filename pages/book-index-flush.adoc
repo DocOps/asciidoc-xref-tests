@@ -1,0 +1,27 @@
+= Book-formatted Edition (from pages/ dir)
+
+:leveloffset: +1
+
+include::main.adoc[]
+
+include::second-topic.adoc[]
+
+== Including a snippet in the index
+
+.Source
+[source,asciidoc]
+----
+\include::../snippets/snip.adoc[]
+----
+
+include::../snippets/snip.adoc[]
+
+.Link to Snippet anchor (from Book index)
+----
+<<main#snippet-anchor,Snippet anchor>>
+----
+
+.Resolves as
+====
+<<main#snippet-anchor,Snippet anchor>>
+====

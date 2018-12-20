@@ -10,14 +10,29 @@ To test this repo:
 
 ### Build HTML Book
 
+#### From project root
+
 ```shell
-asciidoctor -d book -o _output/book-edition.html pages/book-index.adoc
+asciidoctor -d book -o _output/book-edition.html book-index-root.adoc
+```
+#### From pages/ dir
+
+```shell
+asciidoctor -d book -o _output/book-edition.html pages/book-index-flush.adoc
 ```
 
 ### Build PDF Book
 
+#### From project root
+
 ```shell
-asciidoctor-pdf -d book -o _output/book-edition.pdf pages/book-index.adoc
+asciidoctor-pdf -d book -o _output/book-edition.pdf book-index-root.adoc
+```
+
+#### From pages/ dir
+
+```shell
+asciidoctor-pdf -d book -o _output/book-edition.pdf pages/book-index-flush.adoc
 ```
 
 ### Build and Serve Jekyll Site

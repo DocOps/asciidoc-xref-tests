@@ -28,12 +28,24 @@
 <<third-topic#topic-3-secthead-anchor>>
 ----
 
-Resolves as
+.Resolves as
 ====
 <<third-topic#topic-3-secthead-anchor>>
 ====
 
+ifndef::bookformat[]
 .Including a snippet in the Main page
-====
+
 include::../snippets/snip.adoc[]
+
+endif::bookformat[]
+
+.Link to Snippet anchor (from Main)
+----
+<<main#snippet-anchor,Snippet anchor>>
+----
+
+.Resolves as
+====
+<<main#snippet-anchor,Snippet anchor>>
 ====
